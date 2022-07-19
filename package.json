@@ -1,0 +1,41 @@
+{
+  "name": "labenusystem5",
+  "version": "1.0.0",
+  "description": "Você estuda na Labenu_ há tanto tempo que já parecem anos, não é? Então, hoje, vamos pedir para criar um sistema que represente o básico da nossa organização.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "migrations": "tsc && node ./build/data/migrations.js",
+    "start": "tsc && node ./build/index.js",
+    "dev": "nodemon ./src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/future4code/Joy-labenu-system5.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/future4code/Joy-labenu-system5/issues"
+  },
+  "homepage": "https://github.com/future4code/Joy-labenu-system5#readme",
+  "dependencies": {
+    "@types/cors": "^2.8.12",
+    "@types/express": "^4.17.13",
+    "@types/node": "^17.0.34",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "knex": "^2.0.0",
+    "mysql": "^2.18.1",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.6.4",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "@types/uuid": "^8.3.4",
+    "nodemon": "^2.0.16",
+    "ts-node": "^10.7.0"
+  }
+}
