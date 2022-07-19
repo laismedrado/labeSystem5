@@ -1,0 +1,80 @@
+//Buscar aluno por nome
+###
+GET http://localhost:3003/student/karla
+
+//Buscar lista de todos instrutores
+###
+GET http://localhost:3003/instructors
+
+//Listar todas as turmas ativas
+###
+GET http://localhost:3003/class
+
+//Cadastrar uma nova turma
+###
+POST http://localhost:3003/class
+Content-Type: application/json
+
+{
+   "name":"Joy 3",
+   "module": 1
+}
+
+//Cadastrar novo instrutor
+###
+POST http://localhost:3003/instructor
+Content-Type: application/json
+
+{
+    "name":"jessica",
+    "email": "jessica2@labenu.com.br",
+    "birth_date": "1998-05-17",
+    "class_id": "27d5835d-1ebd-45f6-9cc6-8201687bdae5",
+    "specialty": "02"
+}
+
+//Cadastrar novo aluno
+###
+POST http://localhost:3003/student
+Content-Type: application/json
+
+{
+    "name":"karla",
+    "email": "karla@email.com.br",
+    "birthDate": "2003-10-28",
+    "classId": "27d5835d-1ebd-45f6-9cc6-8201687bdae5",
+    "hobby": "Cozinhar"
+}
+
+//Alterar turma do instructor
+###
+PUT http://localhost:3003/instructor/03c570ce-ea47-473c-91de-0a9654c01a9b
+Content-Type: application/json
+
+
+{
+ "class_id":"27d5835d-1ebd-45f6-9cc6-8201687bdae5"  
+}
+
+//Alterar modulo da turma
+###
+PUT http://localhost:3003/class/d9d00231-6310-49fa-a05a-510f874dae21
+Content-Type: application/json
+
+
+{
+ "module": 5
+}
+
+//Alterar turma do aluno 
+###
+PUT http://localhost:3003/student/ff1576e9-4aa2-499b-9e06-47cb081a4d26
+Content-Type: application/json
+
+{
+ "class_id":"be8338c6-dfa2-40d9-af83-8474137c18a7"  
+}
+
+
+
+
